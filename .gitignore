@@ -1,0 +1,19 @@
+# Local dependency/vendor caches
+.deps/
+__pycache__/
+*.pyc
+
+# Browser render profiles and transient logs
+debug.log
+output/*.log
+output/chrome-profile*/
+output/chrome-render-profile/
+
+# Large duplicate packages
+output/codex-package.zip
+output/codex-portable/
+output/fonts/Pretendard-1.3.9.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

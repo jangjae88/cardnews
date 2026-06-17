@@ -1,0 +1,1156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>최근 20대 패션 선호 트렌드 카드뉴스 2026ver</title>
+  <style>
+    @font-face {
+      font-family: "Pretendard Variable";
+      src: url("fonts/Pretendard-1.3.9/web/variable/woff2/PretendardVariable.woff2") format("woff2");
+      font-weight: 45 920;
+      font-style: normal;
+      font-display: block;
+    }
+
+    :root {
+      --base: #0f0e0c;
+      --panel: #17140f;
+      --panel-2: #221c16;
+      --ink: #f3edde;
+      --paper: #efe5d3;
+      --muted: #a99a83;
+      --tan: #d4b896;
+      --tan-deep: #aa875f;
+      --orange: #d85a2a;
+      --line: rgba(212, 184, 150, 0.25);
+      --line-strong: rgba(212, 184, 150, 0.48);
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      background: var(--base);
+      color: var(--ink);
+      font-family: "Pretendard Variable", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: geometricPrecision;
+    }
+
+    main {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      padding: 16px 10px 42px;
+    }
+
+    .card-page {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 14px 0;
+      break-after: page;
+      page-break-after: always;
+    }
+
+    .card-page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+
+    .card {
+      position: relative;
+      width: min(96vw, 1080px);
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(216, 90, 42, 0.16), transparent 30%),
+        linear-gradient(145deg, #100f0d 0%, #17140f 54%, #0f0e0c 100%);
+      color: var(--ink);
+      border-radius: 8px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+      isolation: isolate;
+    }
+
+    .card.light {
+      background:
+        radial-gradient(circle at 88% 10%, rgba(216, 90, 42, 0.15), transparent 30%),
+        linear-gradient(145deg, #efe5d3 0%, #e7d7be 100%);
+      color: var(--base);
+    }
+
+    .inner {
+      position: absolute;
+      inset: 54px;
+      z-index: 2;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 24px;
+    }
+
+    .topline,
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 36px;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 820;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      align-items: flex-end;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .light .footer {
+      border-top-color: rgba(15, 14, 12, 0.18);
+      color: rgba(15, 14, 12, 0.58);
+    }
+
+    .footer span:first-child { max-width: 760px; }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 148px;
+      height: 30px;
+    }
+
+    .brand img {
+      display: block;
+      width: 148px;
+      height: auto;
+      object-fit: contain;
+      filter: none;
+    }
+
+    .light .brand img {
+      filter: invert(1) saturate(0.6) brightness(0.5);
+      opacity: 0.86;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--tan);
+    }
+
+    .light .kicker { color: var(--orange); }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      letter-spacing: 0;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    h1 {
+      font-size: 88px;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      font-weight: 910;
+    }
+
+    h2 {
+      font-size: 76px;
+      line-height: 0.98;
+      letter-spacing: -0.018em;
+      font-weight: 900;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      min-height: 31px;
+      padding: 0 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      color: var(--tan);
+      font-size: 15px;
+      font-weight: 840;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: rgba(212, 184, 150, 0.08);
+    }
+
+    .light .eyebrow {
+      color: var(--base);
+      border-color: rgba(15, 14, 12, 0.25);
+      background: rgba(255, 255, 255, 0.34);
+    }
+
+    .caption {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 27px;
+      line-height: 1.45;
+      font-weight: 560;
+    }
+
+    .light .caption { color: rgba(15, 14, 12, 0.64); }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      background: rgba(15, 14, 12, 0.72);
+      color: var(--ink);
+      font-size: 19px;
+      line-height: 1;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .light .chip {
+      background: rgba(15, 14, 12, 0.08);
+      color: var(--base);
+      border-color: rgba(15, 14, 12, 0.2);
+    }
+
+    .hero {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.9) contrast(1.06) brightness(0.78);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(15, 14, 12, 0.96) 0%, rgba(15, 14, 12, 0.72) 43%, rgba(15, 14, 12, 0.12) 100%),
+        linear-gradient(0deg, rgba(15, 14, 12, 0.42), transparent 42%);
+    }
+
+    .cover-content {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      align-content: stretch;
+      gap: 26px;
+      min-height: 0;
+    }
+
+    .cover-title {
+      display: grid;
+      align-content: start;
+      gap: 22px;
+      max-width: 690px;
+    }
+
+    .cover-title h1 {
+      font-size: 91px;
+      max-width: 670px;
+    }
+
+    .big-note {
+      align-self: end;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      max-width: 830px;
+      padding: 20px 22px;
+      border-radius: 14px;
+      border: 1px solid var(--line-strong);
+      background: rgba(15, 14, 12, 0.78);
+      backdrop-filter: blur(10px);
+    }
+
+    .big-note b {
+      color: var(--orange);
+      font-size: 45px;
+      line-height: 0.9;
+      font-weight: 910;
+    }
+
+    .big-note span {
+      font-size: 23px;
+      line-height: 1.25;
+      font-weight: 820;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    .matrix-layout {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+      min-height: 0;
+    }
+
+    .head-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 26px;
+    }
+
+    .head-row h2 { max-width: 690px; }
+
+    .mini-stat {
+      display: grid;
+      place-items: center;
+      width: 176px;
+      height: 176px;
+      border-radius: 50%;
+      border: 1px solid var(--line-strong);
+      background: var(--panel);
+      color: var(--ink);
+      text-align: center;
+      transform: rotate(3deg);
+    }
+
+    .mini-stat b {
+      display: block;
+      color: var(--orange);
+      font-size: 58px;
+      line-height: 0.86;
+      font-weight: 920;
+    }
+
+    .mini-stat span {
+      display: block;
+      margin-top: 9px;
+      color: var(--tan);
+      font-size: 16px;
+      font-weight: 820;
+      letter-spacing: 0.08em;
+    }
+
+    .look-matrix {
+      position: relative;
+      overflow: hidden;
+      min-height: 640px;
+      border-radius: 14px;
+      border: 1px solid rgba(15, 14, 12, 0.2);
+      background: #111;
+    }
+
+    .look-matrix img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .look-matrix::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      pointer-events: none;
+    }
+
+    .axis {
+      position: absolute;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(15, 14, 12, 0.82);
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 850;
+      letter-spacing: 0.02em;
+      border: 1px solid var(--line);
+    }
+
+    .axis.top { top: 16px; left: 50%; transform: translateX(-50%); }
+    .axis.left { left: 16px; top: 50%; transform: translateY(-50%) rotate(-90deg); }
+
+    .look-label {
+      position: absolute;
+      z-index: 3;
+      min-height: 34px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(15, 14, 12, 0.82);
+      color: var(--tan);
+      font-size: 17px;
+      line-height: 1;
+      font-weight: 850;
+      border: 1px solid var(--line-strong);
+    }
+
+    .l1 { left: 22px; top: 56px; }
+    .l2 { right: 22px; top: 56px; }
+    .l3 { left: 22px; bottom: 26px; }
+    .l4 { right: 22px; bottom: 26px; }
+
+    .compare-layout {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 24px;
+      min-height: 0;
+    }
+
+    .compare-title {
+      display: grid;
+      gap: 18px;
+    }
+
+    .compare-table {
+      display: grid;
+      grid-template-columns: 1fr 74px 1fr;
+      gap: 14px;
+      min-height: 640px;
+    }
+
+    .compare-col {
+      display: grid;
+      grid-template-rows: auto repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .compare-head,
+    .compare-cell {
+      display: grid;
+      align-content: center;
+      min-height: 100px;
+      padding: 18px 20px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .compare-head {
+      color: var(--tan);
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .compare-cell strong {
+      display: block;
+      font-size: 33px;
+      line-height: 1.05;
+      font-weight: 890;
+    }
+
+    .compare-cell span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.22;
+      font-weight: 650;
+    }
+
+    .arrow-col {
+      display: grid;
+      grid-template-rows: auto repeat(4, 1fr);
+      gap: 12px;
+      color: var(--orange);
+      font-size: 34px;
+      font-weight: 920;
+      text-align: center;
+    }
+
+    .arrow-col div {
+      display: grid;
+      place-items: center;
+    }
+
+    .callout {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 78px;
+      padding: 18px 22px;
+      border-radius: 14px;
+      border: 1px solid var(--line-strong);
+      background: rgba(212, 184, 150, 0.1);
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 820;
+    }
+
+    .callout b {
+      color: var(--orange);
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 920;
+    }
+
+    .formula-layout {
+      display: grid;
+      grid-template-columns: 0.94fr 1.06fr;
+      gap: 26px;
+      min-height: 0;
+    }
+
+    .photo-panel {
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+      border-radius: 14px;
+      border: 1px solid var(--line-strong);
+      background: var(--panel);
+    }
+
+    .photo-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(0.95) contrast(1.04);
+    }
+
+    .photo-caption {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      right: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      min-height: 42px;
+      padding: 11px 14px;
+      border-radius: 999px;
+      background: rgba(15, 14, 12, 0.78);
+      color: var(--tan);
+      border: 1px solid var(--line);
+      font-size: 15px;
+      font-weight: 850;
+    }
+
+    .formula-copy {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 20px;
+      min-height: 0;
+    }
+
+    .formula-cards {
+      display: grid;
+      gap: 14px;
+      min-height: 0;
+    }
+
+    .formula-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 16px;
+      min-height: 136px;
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    .formula-card b {
+      display: grid;
+      place-items: center;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: rgba(216, 90, 42, 0.12);
+      color: var(--orange);
+      font-size: 20px;
+      font-weight: 920;
+      border: 1px solid rgba(216, 90, 42, 0.36);
+    }
+
+    .formula-card strong {
+      display: block;
+      font-size: 28px;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+
+    .formula-card span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.28;
+      font-weight: 640;
+    }
+
+    .ratio {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 18px;
+      padding: 18px 20px;
+      border: 1px solid var(--line-strong);
+      border-radius: 14px;
+      background: rgba(212, 184, 150, 0.1);
+    }
+
+    .ratio strong {
+      color: var(--ink);
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .ratio b {
+      color: var(--orange);
+      font-size: 55px;
+      line-height: 0.9;
+      font-weight: 920;
+    }
+
+    .filter-layout {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+
+    .filter-body {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 26px;
+      min-height: 0;
+    }
+
+    .bar-board,
+    .filter-list {
+      border: 1px solid rgba(15, 14, 12, 0.2);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.28);
+      padding: 22px;
+      min-height: 0;
+    }
+
+    .bar-board {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+
+    .board-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: rgba(15, 14, 12, 0.68);
+      font-size: 15px;
+      font-weight: 870;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .bars {
+      display: grid;
+      align-items: end;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      min-height: 0;
+    }
+
+    .bar {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: 12px;
+      height: 100%;
+    }
+
+    .bar-fill {
+      align-self: end;
+      min-height: var(--h);
+      border-radius: 12px 12px 4px 4px;
+      background: var(--base);
+      color: var(--paper);
+      display: grid;
+      place-items: start center;
+      padding-top: 18px;
+      font-size: 19px;
+      font-weight: 910;
+    }
+
+    .bar:nth-child(2) .bar-fill { background: var(--orange); }
+
+    .bar-label {
+      color: var(--base);
+      font-size: 18px;
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    .filter-list {
+      display: grid;
+      gap: 13px;
+      align-content: start;
+    }
+
+    .filter-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 14px;
+      min-height: 74px;
+      padding: 14px 16px;
+      border-radius: 999px;
+      background: rgba(15, 14, 12, 0.08);
+      border: 1px solid rgba(15, 14, 12, 0.14);
+      color: var(--base);
+      font-size: 21px;
+      line-height: 1.15;
+      font-weight: 820;
+    }
+
+    .filter-item b {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--base);
+      color: var(--paper);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .check-layout {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: 28px;
+      min-height: 0;
+    }
+
+    .mood-photo {
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(15, 14, 12, 0.22);
+      background: rgba(255, 255, 255, 0.24);
+    }
+
+    .mood-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .save-badge {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      min-height: 52px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      background: var(--base);
+      color: var(--paper);
+      font-size: 17px;
+      font-weight: 910;
+      letter-spacing: 0.16em;
+    }
+
+    .check-copy {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 18px;
+      min-height: 0;
+    }
+
+    .check-copy h2 { font-size: 72px; }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 12px;
+      min-height: 0;
+    }
+
+    .check-cell {
+      display: grid;
+      align-content: space-between;
+      gap: 12px;
+      min-height: 142px;
+      padding: 18px;
+      border-radius: 14px;
+      background: rgba(15, 14, 12, 0.09);
+      border: 1px solid rgba(15, 14, 12, 0.16);
+      color: var(--base);
+    }
+
+    .check-cell b {
+      display: grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: var(--paper);
+      font-size: 14px;
+      font-weight: 920;
+    }
+
+    .check-cell strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1.08;
+      font-weight: 900;
+    }
+
+    .check-cell span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(15, 14, 12, 0.62);
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 670;
+    }
+
+    body.single-card {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: var(--base);
+    }
+
+    body.single-card main {
+      width: 1080px;
+      height: 1350px;
+      padding: 0;
+      margin: 0;
+    }
+
+    body.single-card .card-page {
+      display: none;
+      width: 1080px;
+      height: 1350px;
+      min-height: 1350px;
+      padding: 0;
+    }
+
+    body.single-card .card-page.active { display: grid; }
+
+    body.single-card .card {
+      width: 1080px;
+      height: 1350px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    @page {
+      size: 1080px 1350px;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body,
+      main {
+        width: 1080px;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+      }
+
+      .card-page {
+        width: 1080px;
+        min-height: 1350px;
+        padding: 0;
+      }
+
+      .card {
+        width: 1080px;
+        height: 1350px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main aria-label="최근 20대 패션 선호 트렌드 카드뉴스 2026ver">
+    <section class="card-page" data-card="1" aria-label="카드 1">
+      <article class="card">
+        <div class="hero"><img src="photos/fashion-20s-cover.png" alt="서울 거리에서 걷는 한국 20대 세 명의 패션 사진"></div>
+        <div class="inner">
+          <div class="topline">
+            <span class="kicker"><span class="num">01</span> FASHION SIGNAL 2026</span>
+            <span class="brand"><img src="brand/logo/main_a.png" alt="EARLYSHINE"></span>
+          </div>
+          <div class="cover-content">
+            <div class="cover-title">
+              <span class="eyebrow">TREND FRAME</span>
+              <h1>2026<br>20대 패션,<br>유행 하나로<br>못 묶습니다</h1>
+              <p class="caption">기본은 조용하게. 포인트는 선명하게.</p>
+              <div class="chip-row">
+                <span class="chip">기본템</span>
+                <span class="chip">스포츠 한 조각</span>
+                <span class="chip">발견의 취향</span>
+              </div>
+            </div>
+            <div class="big-note">
+              <b>80/20</b>
+              <span>오래 입는 베이스 위에, 사진에 남는 작은 신호를 얹는 방식입니다.</span>
+            </div>
+          </div>
+          <div class="footer">
+            <span>국내외 리테일/패션 미디어 자료 기반의 트렌드 프레임입니다. 전체 20대 정량 순위는 확인 필요.</span>
+            <span>01 / 06</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card-page" data-card="2" aria-label="카드 2">
+      <article class="card light">
+        <div class="inner">
+          <div class="topline">
+            <span class="kicker"><span class="num">02</span> PREFERENCE MAP</span>
+            <span class="brand"><img src="brand/logo/main_a.png" alt="EARLYSHINE"></span>
+          </div>
+          <div class="matrix-layout">
+            <div class="head-row">
+              <div>
+                <span class="eyebrow">LOOK MATRIX</span>
+                <h2>지금 취향은<br>네 갈래로<br>움직입니다</h2>
+              </div>
+              <div class="mini-stat">
+                <div><b>4</b><span>STYLE LANES</span></div>
+              </div>
+            </div>
+            <div class="look-matrix">
+              <img src="photos/fashion-20s-look-matrix.png" alt="20대 패션 취향을 보여주는 2x2 룩 매트릭스 사진">
+              <span class="axis top">실용성 -> 표현성</span>
+              <span class="axis left">미니멀 -> 포인트</span>
+              <span class="look-label l1">조용한 기본</span>
+              <span class="look-label l2">스포츠 믹스</span>
+              <span class="look-label l3">유틸리티 레이어</span>
+              <span class="look-label l4">아카이브 무드</span>
+            </div>
+            <p class="caption">하나의 정답보다, 무엇을 어떻게 섞는지가 더 중요해졌습니다.</p>
+          </div>
+          <div class="footer">
+            <span>룩 분류는 설명용 프레임입니다. 국내 전체 20대 선호 순위로 해석하지 않습니다.</span>
+            <span>02 / 06</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card-page" data-card="3" aria-label="카드 3">
+      <article class="card">
+        <div class="inner">
+          <div class="topline">
+            <span class="kicker"><span class="num">03</span> WHAT CHANGED</span>
+            <span class="brand"><img src="brand/logo/main_a.png" alt="EARLYSHINE"></span>
+          </div>
+          <div class="compare-layout">
+            <div class="compare-title">
+              <span class="eyebrow">BEFORE / NOW</span>
+              <h2>브랜드보다<br>"내가 고른 이유"</h2>
+              <p class="caption">로고를 크게 보이기보다, 발견한 취향을 설명하는 쪽으로 갑니다.</p>
+            </div>
+            <div class="compare-table">
+              <div class="compare-col">
+                <div class="compare-head">BEFORE</div>
+                <div class="compare-cell"><strong>유명 로고</strong><span>알아보는 브랜드가 먼저</span></div>
+                <div class="compare-cell"><strong>세트로 맞춤</strong><span>룩 전체를 한 톤으로</span></div>
+                <div class="compare-cell"><strong>새상품 중심</strong><span>새 시즌, 새 제품</span></div>
+                <div class="compare-cell"><strong>구매만 함</strong><span>온라인에서 바로 결제</span></div>
+              </div>
+              <div class="arrow-col">
+                <div></div>
+                <div>-></div>
+                <div>-></div>
+                <div>-></div>
+                <div>-></div>
+              </div>
+              <div class="compare-col">
+                <div class="compare-head">NOW</div>
+                <div class="compare-cell"><strong>발견한 브랜드</strong><span>내가 먼저 알아본 느낌</span></div>
+                <div class="compare-cell"><strong>한 조각 믹스</strong><span>스포츠, 빈티지, 기본템 조합</span></div>
+                <div class="compare-cell"><strong>스토리 있는 옷</strong><span>빈티지, 리세일, 아카이브</span></div>
+                <div class="compare-cell"><strong>경험하고 공유</strong><span>팝업, 편집숍, 착장컷</span></div>
+              </div>
+            </div>
+            <div class="callout"><b>SEOUL</b><span>서울은 온라인 발견 후 오프라인에서 경험하고 공유하는 흐름이 강합니다.</span></div>
+          </div>
+          <div class="footer">
+            <span>출처: Vogue Seoul retail analysis, Harper's Bazaar archival fashion, ELLE sport-inspired fashion.</span>
+            <span>03 / 06</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card-page" data-card="4" aria-label="카드 4">
+      <article class="card">
+        <div class="inner">
+          <div class="topline">
+            <span class="kicker"><span class="num">04</span> LOOK FORMULA</span>
+            <span class="brand"><img src="brand/logo/main_a.png" alt="EARLYSHINE"></span>
+          </div>
+          <div class="formula-layout">
+            <div class="photo-panel">
+              <img src="photos/fashion-20s-detail.png" alt="재킷, 니트, 데님, 스카프, 가방 등 패션 디테일 사진">
+              <div class="photo-caption"><span>DETAIL SIGNAL</span><span>BASIC + POINT</span></div>
+            </div>
+            <div class="formula-copy">
+              <div>
+                <span class="eyebrow">STYLE FORMULA</span>
+                <h2>요즘 룩 공식은<br>생각보다<br>단순합니다</h2>
+              </div>
+              <p class="caption">기본템 80%에, 기억나는 포인트 20%.</p>
+              <div class="formula-cards">
+                <div class="formula-card">
+                  <b>01</b>
+                  <div><strong>넓은 팬츠 +<br>깔끔한 상의 +<br>작은 액세서리</strong><span>조용하지만 사진에 남는 기본 조합</span></div>
+                </div>
+                <div class="formula-card">
+                  <b>02</b>
+                  <div><strong>저지/트랙 +<br>클래식 아이템 +<br>드레스업</strong><span>스포츠 한 조각만 빌리는 방식</span></div>
+                </div>
+                <div class="formula-card">
+                  <b>03</b>
+                  <div><strong>빈티지 질감 +<br>현대적 핏 +<br>짧은 스토리</strong><span>중고가 아니라 발견한 취향처럼</span></div>
+                </div>
+                <div class="ratio"><strong>핵심은 과한 풀세트가 아니라<br>한 가지 신호입니다.</strong><b>1</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <span>구체 아이템은 시즌, 성별, 가격대에 따라 달라질 수 있습니다. 카드뉴스용 요약 프레임입니다.</span>
+            <span>04 / 06</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card-page" data-card="5" aria-label="카드 5">
+      <article class="card light">
+        <div class="inner">
+          <div class="topline">
+            <span class="kicker"><span class="num">05</span> SHOPPING FILTER</span>
+            <span class="brand"><img src="brand/logo/main_a.png" alt="EARLYSHINE"></span>
+          </div>
+          <div class="filter-layout">
+            <div>
+              <span class="eyebrow">BUYING LOGIC</span>
+              <h2>살 때는<br>예쁨만<br>보지 않습니다</h2>
+              <p class="caption">20대 고객은 "입을 이유"를 같이 봅니다.</p>
+            </div>
+            <div class="filter-body">
+              <div class="bar-board">
+                <div class="board-title"><span>RELATIVE SIGNAL</span><span>NO RANK CLAIM</span></div>
+                <div class="bars" aria-label="구매 고려 요소 상대 강도 그래프">
+                  <div class="bar"><div class="bar-fill" style="--h: 82%;">HIGH</div><div class="bar-label">PRICE</div></div>
+                  <div class="bar"><div class="bar-fill" style="--h: 88%;">HIGH</div><div class="bar-label">QUALITY</div></div>
+                  <div class="bar"><div class="bar-fill" style="--h: 70%;">MID+</div><div class="bar-label">FIT</div></div>
+                  <div class="bar"><div class="bar-fill" style="--h: 62%;">MID</div><div class="bar-label">SHARE</div></div>
+                </div>
+              </div>
+              <div class="filter-list">
+                <div class="filter-item"><b>1</b><span>가격이 납득되는가</span></div>
+                <div class="filter-item"><b>2</b><span>소재와 핏이 괜찮은가</span></div>
+                <div class="filter-item"><b>3</b><span>사진에 남는 포인트가 있는가</span></div>
+                <div class="filter-item"><b>4</b><span>여러 번 다시 입을 수 있는가</span></div>
+                <div class="filter-item"><b>5</b><span>내 취향처럼 설명되는가</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <span>미국 teen survey와 글로벌 패션 미디어 자료는 방향 신호로만 참고했습니다. 국내 20대 정확 순위는 확인 필요.</span>
+            <span>05 / 06</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card-page" data-card="6" aria-label="카드 6">
+      <article class="card light">
+        <div class="inner">
+          <div class="topline">
+            <span class="kicker"><span class="num">06</span> SAVE CHECKLIST</span>
+            <span class="brand"><img src="brand/logo/main_a.png" alt="EARLYSHINE"></span>
+          </div>
+          <div class="check-layout">
+            <div class="mood-photo">
+              <img src="photos/fashion-20s-moodboard.png" alt="세 가지 패션 착장 무드보드 사진">
+              <span class="save-badge">SAVE THIS</span>
+            </div>
+            <div class="check-copy">
+              <div>
+                <span class="eyebrow">FOR SMALL BRAND</span>
+                <h2>작은 브랜드라면<br>이 6가지만<br>보세요</h2>
+              </div>
+              <p class="caption">유행을 맞히기보다, 조합을 설계하세요.</p>
+              <div class="check-grid">
+                <div class="check-cell"><b>01</b><div><strong>베이스는 오래 입게</strong><span>기본템은 가격과 소재가 먼저</span></div></div>
+                <div class="check-cell"><b>02</b><div><strong>포인트는 사진에 남게</strong><span>색, 소품, 실루엣 하나만</span></div></div>
+                <div class="check-cell"><b>03</b><div><strong>로고보다 핏과 소재</strong><span>보이는 과시보다 입는 이유</span></div></div>
+                <div class="check-cell"><b>04</b><div><strong>착장컷으로 설명</strong><span>제품컷보다 조합이 설득함</span></div></div>
+                <div class="check-cell"><b>05</b><div><strong>공간은 공유되게</strong><span>팝업과 매장은 촬영 장면까지</span></div></div>
+                <div class="check-cell"><b>06</b><div><strong>스토리는 짧고 선명하게</strong><span>왜 골랐는지 한 줄로</span></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <span>출처: Vogue, ELLE, Harper's Bazaar, Glamour, Barron's / 확인 필요: 국내 20대 정량 순위.</span>
+            <span>06 / 06</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const selected = new URLSearchParams(location.search).get("card");
+    if (selected) {
+      document.body.classList.add("single-card");
+      document.querySelectorAll(".card-page").forEach((page) => {
+        page.classList.toggle("active", page.dataset.card === selected);
+      });
+    }
+  </script>
+</body>
+</html>
